@@ -123,7 +123,7 @@ All your app configuration in one place. Constants like API endpoints, regex for
 
 ## 📚 `core/lib/` - THE LIBRARY'S 📖
 
-<img width="400" height="650" alt="Снимок экрана 2025-12-01 в 22 08 20" src="https://github.com/user-attachments/assets/7bfef751-2732-4acd-99cb-b17c874e0648" />
+<img width="400" height="750" alt="Снимок экрана 2025-12-01 в 22 08 20" src="https://github.com/user-attachments/assets/7bfef751-2732-4acd-99cb-b17c874e0648" />
 
 This is where all the magic utilities live:
 
