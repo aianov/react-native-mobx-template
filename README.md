@@ -341,7 +341,7 @@ This is probably one of the coolest features you've ever seen. A **floating drag
 
 ## What it looks like:
 
-<img width="200" height="200" alt="Снимок экрана 2025-12-01 в 21 21 43" src="https://github.com/user-attachments/assets/175aec69-35cf-4810-b3ab-e174612dc3d7" />
+<img width="300" height="400" alt="Снимок экрана 2025-12-01 в 23 36 50" src="https://github.com/user-attachments/assets/e19bc970-5800-4381-bac8-832a88d77f70" />
 
 ## A small floating React icon button that you can drag anywhere on screen. Tap it to open the full this debug panel:
 
