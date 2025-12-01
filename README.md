@@ -206,7 +206,7 @@ Global MobX stores. Things that need to be accessed from anywhere.
 
 ## 🎨 `core/ui/` - UI COMPONENTS LIBRARY
 
-<img width="400" height="500" alt="Снимок экрана 2025-12-01 в 22 12 42" src="https://github.com/user-attachments/assets/474574ec-bb0b-4320-a731-1adca998b186" />
+<img width="400" height="800" alt="Снимок экрана 2025-12-01 в 22 12 42" src="https://github.com/user-attachments/assets/474574ec-bb0b-4320-a731-1adca998b186" />
 
 Holy... we have a lot here:
 
