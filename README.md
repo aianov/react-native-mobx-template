@@ -45,7 +45,7 @@
 
 # 📁 Architecture
 
-<img width="300" height="500" alt="Снимок экрана 2025-12-01 в 23 22 21" src="https://github.com/user-attachments/assets/a2fa7346-9831-4137-ae44-c18fa8113286" />
+<img width="300" height="550" alt="Снимок экрана 2025-12-01 в 23 22 21" src="https://github.com/user-attachments/assets/a2fa7346-9831-4137-ae44-c18fa8113286" />
 
 
 ## Pretty empty right?
@@ -74,7 +74,7 @@ Some kind of folders are too easy and small to explain, so I will skip folders s
 
 # ⚙️ `core/` folder - THE BRAIN 🧠
 
-<img width="300" height="500" alt="Снимок экрана 2025-12-01 в 22 04 03" src="https://github.com/user-attachments/assets/c4304a95-223b-465b-a3ab-65a1df15ff15" />
+<img width="300" height="650" alt="Снимок экрана 2025-12-01 в 22 04 03" src="https://github.com/user-attachments/assets/c4304a95-223b-465b-a3ab-65a1df15ff15" />
 
 This is where magic happens. Let me show you structure first:
 
