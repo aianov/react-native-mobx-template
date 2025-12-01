@@ -321,13 +321,15 @@ This is **Feature-Sliced Design** but simpler. Each feature is isolated. Easy to
 
 # All logic of all features, need to be separated to this 3 main stores
 
+```
 auth/
-├── stores/             # Authentication module
-│   ├── auth-actions/        # Actions store - only requests function and response states [mobxSaiFetch function here]
-│   ├── auth-interactions/       # Interactions store - All interaction logic with JSX
+├── stores/                 # Authentication module
+│   ├── auth-actions/       # Actions store - only requests function and response states [mobxSaiFetch function here]
+│   ├── auth-interactions/  # Interactions store - All interaction logic with JSX
 │   ├── auth-service/       # Services store - Boilerplate from interactions and actions, etc: success & error handlers for action store
-│	 │
-│   └── index.ts/      # Re-export for best path-alias experience and clean code
+│	│
+│   └── index.ts/           # Re-export for best path-alias experience and clean code
+```
 
 # That's it for architecture!
 
