@@ -390,17 +390,23 @@ Shows all AsyncStorage data:
 - Array length indicators
 - Delete individual items
 
+---
+
 ### 🖼️ **Images Tab**
 Shows cached images from storage
 
-### 🔄 **Cache Updates Tab**
+---
+
+## 🔄 **Cache Updates Tab**
 Shows history of all cache mutations:
 - `saiUpdater` - in-memory updates
 - `saiLocalCacheUpdater` - local cache updates
 - `saiLocalStorageUpdater` - localStorage updates
 - Shows what changed (added/removed items, changed keys)
 
-### 🔍 **Global Search**
+---
+
+## 🔍 **Global Search**
 Search across ALL tabs at once! Find any string in:
 - Request URLs
 - Request/Response bodies
@@ -408,23 +414,32 @@ Search across ALL tabs at once! Find any string in:
 - LocalStorage
 - Navigate between matches
 
-### Font Size Controls
+---
+
+## Font Size Controls
 Each tab has +/- buttons to adjust font size. Saved to localStorage! [Press DEFF to return default font size]
 
-## How to use:
+---
+
+# Basic usage [Already in template]:
 
 ```tsx
 // In your App.tsx or root component
 import { DebuggerUi } from '@lib/debuggerUi/DebuggerUi';
 
-export const App = () => {
+export const AppContent = () => {
   return (
     <>
-      <YourApp />
       {__DEV__ && <DebuggerUi />}  {/* Only show in development */}
     </>
   );
 };
+
+export const App = () => {
+	return (
+		<AppContent />
+	)
+}
 ```
 
 That's it! Now you have full visibility into your app's HTTP layer 🔥
@@ -446,12 +461,12 @@ class UserActionsStore {
 
 	getProfileAction = () => {
 		profile = mobxSaiFetch(
-    		`/user/profile/${userId}`,     // URL
-    		null,                // Body {} (null for GET)
-    		{
-      		id: 'getUserProfile',                // Cache key
-      		storageCache: true,                  // Save to AsyncStorage
-      		onSuccess: getProfileSuccessHandler, // Success callback
+			`/user/profile/${userId}`,               // URL
+			null,                                    // Body {} (null for GET)
+			{
+      			id: 'getUserProfile',                // Cache key
+      			storageCache: true,                  // Save to AsyncStorage
+      			onSuccess: getProfileSuccessHandler, // Success callback
 				onError: getProfileErrorHandler      // Error callback
     		}
 		);
@@ -515,7 +530,7 @@ interface MobxSaiFetchInstance<T> {
   // Methods
   fetch: (promise) => this;
   reset: () => this;
-  saiUpdater: (...) => void; // useMobxUpdater (Can update cache too, for sync with local data)
+  saiUpdater: (...) => void; // its basically useMobxUpdate instance (Can update cache too, for sync with local data)
 }
 ```
 
@@ -581,14 +596,68 @@ mobxSaiFetch(url, body, {
 });
 ```
 
-## Updating Cached Data:
+---
+
+# `createMobxSaiHttpInstance` - Axios like but just only for mobxSaiFetch usage
+
+! To use mobxSaiFetch with "baseUrl" setted. You need to use createMobxSaiHttpInstance. !
+
+## Basic usage:
+
+```tsx
+import { createMobxSaiHttpInstance } from '@lib/mobx-toolbox';
+import { Platform } from 'react-native';
+
+export const createInstance = () => {
+
+	const mobxHttpInstance = createMobxSaiHttpInstance({
+		baseURL,
+		withCredentials: true,
+		headers: {
+			'Content-Type': 'application/json'
+		}
+	});
+
+	mobxHttpInstance.defaults.withCredentials = true;
+
+	mobxHttpInstance.interceptors.request.use(
+		async (config) => {
+			config.withCredentials = true;        // ALL REQUESTS
+			return config;
+		},
+		(error: any) => {
+			console.error(error)                  // ALL ERRORS
+			return Promise.reject(error);
+		}
+	);
+
+	mobxHttpInstance.interceptors.response.use(
+		async (response) => {
+			console.log(response);                 // ALL RESPONSES
+			return response;
+		},
+		(error: any) => {
+			console.error(error);                  // ALL ERRORS FROM RESPONSES
+			return Promise.reject(error);
+		}
+	);
+
+	return mobxHttpInstance;
+};
+```
+
+## It's only needed for set baseurl to more comfy mobxSaiFetch usage (1-st param)
+
+---
+
+# Updating Cached Data:
 
 ### Method 1: `saiUpdater` (on instance)
 
 ```tsx
-// Update single item in array
 const { messages } = messageActionsStore
 
+// Update single item in array
 messages.saiUpdater(
   'message-123',              // ID of item to update
   'isRead',                   // Field to update [TYPE SAFE]
@@ -610,7 +679,7 @@ messagesStore.messages.saiUpdater(
 
 // Update entire array
 messagesStore.messages.saiUpdater(
-  null,                       // null = update array
+  null,                              // null = update array
   null,
   (prevArray) => prevArray.filter(m => !m.isDeleted),
   'id',
@@ -667,16 +736,16 @@ messages = mobxSaiFetch(
    {
       id: 'getChatMessages',
       pathToArray: 'messages',
-		takeCachePriority: "localStorage",
-		method: 'GET',
+      takeCachePriority: "localStorage",
+      method: 'GET',
       needPending,
-		fetchIfPending: false,
+      fetchIfPending: false,
       fetchIfHaveData: false,
       fetchIfHaveLocalStorage: false,
       storageCache: true,
       onSuccess: getMessagesSuccessHandler,
       onError: getMessagesErrorHandler,
-		maxCacheData: 10,
+	  maxCacheData: 10,
       dataScope: {
          startFrom: "bot", // Start from bottom (newest)
          scrollRef: messagesScrollRef,
@@ -772,7 +841,7 @@ interface ThemeT {
   bg_300: string;
   bg_400: string;
   bg_500: string;
-  bg_600: string;  // Darkest
+  bg_600: string;  // Darkest (no really always)
   
   // Borders (converted from CSS to RN format)
   border_100: string;
@@ -912,7 +981,7 @@ All `core/ui` components automatically use theme:
 
 ## `logger` - Colored Logging
 
-## !!! [All logs appear in DebuggerUi, in "Logger" tab] !!!
+# `All logs appear in DebuggerUi in Logger tab`
 
 ```tsx
 import { logger } from '@lib/helpers';
@@ -988,6 +1057,4 @@ Questions? Issues? Feature requests? Hit me up!
 
 ---
 
-Made with ❤️ and lots of 🧃
-
-From Kazakhstan 🇰🇿
+Made with ❤️ and lots of 🧃 from Kazakhstan 🇰🇿
