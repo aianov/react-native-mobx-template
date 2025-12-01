@@ -39,7 +39,7 @@ const AppContent = observer(() => {
     <>
       <RootNavigator initialRouteName={mappedInitialRoute as keyof RootStackParamList} />
       <StatusBar style="light" />
-      <DebuggerUi />
+      {__DEV__ && <DebuggerUi />}
     </>
   );
 });
