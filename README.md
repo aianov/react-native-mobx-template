@@ -74,7 +74,7 @@ Some kind of folders are too easy and small to explain, so I will skip folders s
 
 # ⚙️ `core/` folder - THE BRAIN 🧠
 
-<img width="300" height="650" alt="Снимок экрана 2025-12-01 в 22 04 03" src="https://github.com/user-attachments/assets/c4304a95-223b-465b-a3ab-65a1df15ff15" />
+<img width="350" height="650" alt="Снимок экрана 2025-12-01 в 22 04 03" src="https://github.com/user-attachments/assets/c4304a95-223b-465b-a3ab-65a1df15ff15" />
 
 This is where magic happens. Let me show you structure first:
 
