@@ -64,9 +64,9 @@ src/
 ├── modules/       # Now I'll start to show you unique architecture.
 ```
 
----
+Some kind of folders are too easy and small to explain, so I will skip folders sometime
 
-## Some kind of folders are too easy and small to explain, so I will skip folders sometime
+---
 
 # 🔥 Now Let's dive deeper into each folder!
 
