@@ -379,6 +379,7 @@ Real-time logs with colors:
 - Warning (orange)
 - Error (red)
 - Copy last 100 logs button
+- Or press to any log to copy one
 - Auto-scroll to bottom
 
 <img width="600" height="600" alt="Снимок экрана 2025-12-01 в 21 29 42" src="https://github.com/user-attachments/assets/e0b6a817-dabd-4d23-b988-3fa68fa53cf0" />
