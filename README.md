@@ -345,11 +345,11 @@ This is probably one of the coolest features you've ever seen. A **floating drag
 
 ## A small floating React icon button that you can drag anywhere on screen. Tap it to open the full this debug panel:
 
-<img width="400" height="500" alt="Снимок экрана 2025-12-01 в 21 28 15" src="https://github.com/user-attachments/assets/c10b0f72-5dce-4431-8209-ff1b8753d791" />
+<img width="600" height="700" alt="Снимок экрана 2025-12-01 в 21 28 15" src="https://github.com/user-attachments/assets/c10b0f72-5dce-4431-8209-ff1b8753d791" />
 
 # Features:
 
-<img width="400" height="400" alt="Снимок экрана 2025-12-01 в 21 28 54" src="https://github.com/user-attachments/assets/ecb4776a-4493-44a5-b0af-b4e237485773" />
+<img width="600" height="600" alt="Снимок экрана 2025-12-01 в 21 28 54" src="https://github.com/user-attachments/assets/ecb4776a-4493-44a5-b0af-b4e237485773" />
 
 ### 📡 **Requests Tab**
 Shows all HTTP requests with:
@@ -361,7 +361,7 @@ Shows all HTTP requests with:
 - Repeat count (×3 means same request was made 3 times)
 - Copy button for each request
 
-<img width="400" height="400" alt="Снимок экрана 2025-12-01 в 21 29 19" src="https://github.com/user-attachments/assets/632ccd06-afd3-4017-a06c-5b1d2347b47c" />
+<img width="600" height="600" alt="Снимок экрана 2025-12-01 в 21 29 19" src="https://github.com/user-attachments/assets/632ccd06-afd3-4017-a06c-5b1d2347b47c" />
 
 ### 📦 **Cache Tab**
 Shows current in-memory cache:
@@ -370,7 +370,7 @@ Shows current in-memory cache:
 - Delete individual cache items
 - Clear all cache
 
-<img width="400" height="400" alt="Снимок экрана 2025-12-01 в 21 29 28" src="https://github.com/user-attachments/assets/12db7603-1b43-4b63-8608-a2688ecfc926" />
+<img width="600" height="600" alt="Снимок экрана 2025-12-01 в 21 29 28" src="https://github.com/user-attachments/assets/12db7603-1b43-4b63-8608-a2688ecfc926" />
 
 ### 📝 **Logger Tab**
 Real-time logs with colors:
@@ -381,7 +381,7 @@ Real-time logs with colors:
 - Copy last 100 logs button
 - Auto-scroll to bottom
 
-<img width="400" height="400" alt="Снимок экрана 2025-12-01 в 21 29 42" src="https://github.com/user-attachments/assets/e0b6a817-dabd-4d23-b988-3fa68fa53cf0" />
+<img width="600" height="600" alt="Снимок экрана 2025-12-01 в 21 29 42" src="https://github.com/user-attachments/assets/e0b6a817-dabd-4d23-b988-3fa68fa53cf0" />
 
 ### 💾 **LocalStorage Tab**
 Shows all AsyncStorage data:
