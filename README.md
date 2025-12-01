@@ -29,7 +29,8 @@
 
 # 📁 Architecture
 
-<img width="400" height="500" alt="Снимок экрана 2025-12-01 в 21 39 12" src="https://github.com/user-attachments/assets/23dd715e-1f9d-481a-93df-7d6ca976b711" />
+<img width="300" height="500" alt="Снимок экрана 2025-12-01 в 23 22 21" src="https://github.com/user-attachments/assets/a2fa7346-9831-4137-ae44-c18fa8113286" />
+
 
 ## Pretty empty right?
 ## We have `app`, `assets`, `core` and `modules` folders inside `src` folder.
