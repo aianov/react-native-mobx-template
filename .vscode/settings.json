@@ -1,0 +1,16 @@
+{
+	"i18n-ally.localesPaths": [
+		"src/shared/locales"
+	],
+	"[typescript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"editor.tabSize": 3,
+	"typescript.preferences.quoteStyle": "single",
+	"javascript.preferences.quoteStyle": "single",
+	"javascript.format.semicolons": "insert",
+	"typescript.format.semicolons": "insert",
+}

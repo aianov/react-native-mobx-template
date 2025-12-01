@@ -1,0 +1,19 @@
+{
+	"plugins": ["react-compiler"],
+	"rules": {
+		"react-compiler/react-compiler": "error",
+		"react/jsx-max-props-per-line": [
+			1,
+			{ "maximum": 1, "when": "multiline" }
+		],
+		"arrow-body-style": ["error", "as-needed"],
+		"implicit-arrow-linebreak": ["error", "beside"]
+	},
+	"parserOptions": {
+		"ecmaVersion": 2020,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	}
+}

@@ -1,0 +1,52 @@
+{
+	"extends": "expo/tsconfig.base",
+	"compilerOptions": {
+		"strict": true,
+		"target": "esnext",
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"allowSyntheticDefaultImports": true,
+		"baseUrl": ".",
+		"paths": {
+			"@app/*": ["src/app/*"],
+			"@pages/*": ["src/pages/*"],
+
+			"@auth/*": ["src/modules/auth/*"],
+			"@onboarding/*": ["src/modules/onboarding/*"],
+			"@theme/*": ["src/modules/theme/*"],
+
+			"@modules/*": ["src/modules/*"],
+
+			"@api/*": ["src/core/api/*"],
+			"@lib/*": ["src/core/lib/*"],
+			"@utils/*": ["src/core/utils/*"],
+			"@storage/*": ["src/core/storage/*"],
+			"@locales/*": ["src/core/locales/*"],
+
+			"@mobx-toolbox/*": ["src/core/mobx-toolbox/*"],
+
+			"@stores/*": ["src/core/stores/*"],
+
+			"@core/*": ["src/core/*"],
+			
+			"@config/*": ["src/core/config/*"],
+			"@widgets/*": ["src/core/widgets/*"],
+			"@modals/*": ["src/core/widgets/modals/*"],
+			"@bottomsheets/*": ["src/core/widgets/bottomsheets/*"],
+			"@navigations/*": ["src/core/widgets/navigations/*"],
+			"@headers/*": ["src/core/widgets/headers/*"],
+			"@hooks/*": ["src/core/hooks/*"],
+
+			"@images/*": ["src/assets/images/*"],
+			"@icons/*": ["src/assets/icons/*"],
+			"@fonts/*": ["src/assets/fonts/*"],
+			"@sounds/*": ["src/assets/sounds/*"],
+			"@videos/*": ["src/assets/videos/*"],
+			"@styles/*": ["src/assets/styles/*"],
+			"@animations/*": ["src/assets/animations/*"],
+
+		}
+	},
+	"exclude": ["node_modules", "babel.config.js", "metro.config.js"]
+}

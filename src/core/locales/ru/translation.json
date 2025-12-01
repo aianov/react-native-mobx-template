@@ -1,0 +1,31 @@
+{
+	"sign": "Вход",
+	"signin": "Войти",
+	"signup": "Зарегистрироваться",
+	"sign_up": "Регистрация",
+	"sign_description": "Войди в свой аккаунт, чтобы перейти на главную страницу",
+	"sign_up_description": "Зарегистрируй свой аккаунт, чтобы перейти на главную страницу",
+	"noaccount": "Нет аккаунта?",
+	"haveaccount": "Есть аккаунт?",
+
+	"name_placeholder": "Имя",
+	"phone_number_placeholder": "Номер телефона",
+	"password_placeholder": "Пароль",
+	"repeat_password_placeholder": "Повторите пароль",
+
+	"skip": "Пропустить",
+	"next": "Далее",
+	"get_started": "Начать",
+
+	"onboarding_slide1_title": "Добро пожаловать в Pinely React Native Template",
+	"onboarding_slide1_description": "Этот шаблон поможет вам быстро начать разработку приложения на React Native",
+
+	"onboarding_slide2_title": "Готовые компоненты",
+	"onboarding_slide2_description": "Используйте готовые компоненты для быстрого и удобного разработки приложения. Они находятся в папке src/core/ui",
+
+	"onboarding_slide3_title": "Огромная масштабируемость",
+	"onboarding_slide3_description": "Эта архитектура позволяет вам быстро и легко масштабировать ваше приложение. Следить, тестировать и дебажить. Нажмите на плавающую кнопку чтобы открыть деббагер",
+
+	"onboarding_slide4_title": "Наслаждайтесь разработкой",
+	"onboarding_slide4_description": "Наслаждайтесь разработкой вашего приложения с нашей модульной архитектурой S.A.I"
+}

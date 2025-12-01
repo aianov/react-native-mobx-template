@@ -1,0 +1,44 @@
+{
+  "cli": {
+    "version": ">= 15.0.10",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "ios": {
+      "node": "20.19.4",
+      "yarn": "1.22.22",
+      "resourceClass": "medium",
+      "credentialsSource": "local",
+      "prebuildCommand": "yarn install --legacy-peer-deps && node scripts/patch-autosizing-stack.js && node scripts/fix-object-version.js && node scripts/update-app-icon.js && node scripts/auto-version.js",
+      "autoIncrement": true
+    },
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "node": "20.19.4"
+    },
+    "preview": {
+      "distribution": "internal",
+      "node": "20.19.4"
+    },
+    "production": {
+      "autoIncrement": true,
+      "developmentClient": false,
+      "node": "20.19.4",
+      "yarn": "1.22.22",
+      "env": {
+        "EXPO_NO_DEV_CLIENT": "1"
+      },
+      "android": {
+        "resourceClass": "medium"
+      },
+      "ios": {
+        "resourceClass": "medium",
+        "prebuildCommand": "yarn install --legacy-peer-deps && node scripts/patch-autosizing-stack.js && node scripts/fix-object-version.js && node scripts/update-app-icon.js && node scripts/auto-version.js"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

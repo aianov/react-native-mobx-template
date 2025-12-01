@@ -1,0 +1,31 @@
+{
+	"sign": "Sign in",
+	"signin": "Sign in",
+	"signup": "Sign up",
+	"sign_up": "Sign up",
+	"sign_description": "Sign in to your account to access the main page",
+	"sign_up_description": "Sign up for an account to access the main page",
+	"noaccount": "No account?",
+	"haveaccount": "Have an account?",
+
+	"name_placeholder": "Name",
+	"phone_number_placeholder": "Phone number",
+	"password_placeholder": "Password",
+	"repeat_password_placeholder": "Repeat password",
+	
+	"skip": "Skip",
+	"next": "Next",
+	"get_started": "Get started",
+
+	"onboarding_slide1_title": "Welcome to Pinely React Native Template",
+	"onboarding_slide1_description": "This template will help you quickly start developing an application on React Native",
+
+	"onboarding_slide2_title": "Ready components",
+	"onboarding_slide2_description": "Use ready components for quick and easy development of the application. They are located in the src/core/ui folder",
+
+	"onboarding_slide3_title": "Huge scalability",
+	"onboarding_slide3_description": "This architecture allows you to quickly and easily scale your application. Follow, test and debug. Click the floating button to open the debugger",
+
+	"onboarding_slide4_title": "Enjoy development",
+	"onboarding_slide4_description": "Enjoy developing your application with our modular S.A.I architecture"
+}
