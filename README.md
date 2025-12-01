@@ -1039,11 +1039,12 @@ modules/your-feature/
 
 # And remember. It's all `CUSTOMIZIBLE`.
 
-## You can change whatever you want, lib, ui, or something else.
+`You can change whatever you want, lib, ui, or something else.`
 
 --- 
 
-# That's the architecture! Simple, scalable, maintainable and very satisfying.
+## That's the architecture! Simple, scalable, maintainable and very satisfying.
+
 # Just-Perfect 💎
 
 ---
