@@ -20,18 +20,18 @@
   <table>
     <tr>
       <td>
-        <img width="300" height="350" src="https://github.com/user-attachments/assets/7095f16c-7061-45b1-b570-bd8acdbe9e42" />
+        <img width="350" height="500" src="https://github.com/user-attachments/assets/7095f16c-7061-45b1-b570-bd8acdbe9e42" />
       </td>
       <td>
-        <img width="300" height="350" src="https://github.com/user-attachments/assets/9c470fdc-f607-4712-9c0f-850b83b7cefd" />
+        <img width="350" height="500" src="https://github.com/user-attachments/assets/9c470fdc-f607-4712-9c0f-850b83b7cefd" />
       </td>
     </tr>
     <tr>
       <td>
-        <img width="300" height="350" src="https://github.com/user-attachments/assets/9dd739ea-a6d5-40d1-b192-0d5d8b855615" />
+        <img width="350" height="500" src="https://github.com/user-attachments/assets/9dd739ea-a6d5-40d1-b192-0d5d8b855615" />
       </td>
       <td>
-        <img width="300" height="350" src="https://github.com/user-attachments/assets/4c26fb80-619d-427a-9be2-b69d88ed7e62" />
+        <img width="350" height="500" src="https://github.com/user-attachments/assets/4c26fb80-619d-427a-9be2-b69d88ed7e62" />
       </td>
     </tr>
   </table>
