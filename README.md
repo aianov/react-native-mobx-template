@@ -55,19 +55,19 @@
 
 # 📂 `SRC` folders explain:
 
-## 🧪 `__tests__/` 
+## `__tests__/` 
 For components, functions, screenshot and etc all type of tests [I use Jest btw]
 
-## 📱 `app/` 
+## `app/` 
 Have `main.tsx`, and `App.tsx`. Also folders like `layouts` and `router`.
 
-## 🎨 `assets/` 
+## `assets/` 
 Inside this folder we have 6 folders with animations, fonts, icons, images, sounds, and global styles from StyleSheet
 
-## ⚙️ `core/` 
+## `core/` 
 One of the important folder here. Inside we have folders like: api, config, hooks, lib, locales (i18n), storage (AsyncStorage), stores (MobX global stores), ui, utils and widgets. We will talk about this folder later.
 
-## 📦 `modules/` 
+## `modules/` 
 Now I'll start to show you unique architecture.
 
 ---
